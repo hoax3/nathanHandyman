@@ -8,11 +8,17 @@ const Navbar = () => {
             const sections = ['services', 'process', 'contact'];
             let current = '';
 
+            // Check if we've reached the bottom of the page
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50) {
+                setActiveSection('contact');
+                return;
+            }
+
             for (const section of sections) {
                 const element = document.getElementById(section);
                 if (element) {
                     const rect = element.getBoundingClientRect();
-                    if (rect.top <= 100 && rect.bottom >= 100) {
+                    if (rect.top <= 150 && rect.bottom >= 150) {
                         current = section;
                     }
                 }
@@ -21,6 +27,7 @@ const Navbar = () => {
         };
 
         window.addEventListener('scroll', handleScroll);
+        handleScroll(); // Check on mount
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
