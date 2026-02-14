@@ -29,7 +29,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-gray-50 text-[12px] text-brand-gray-400 font-medium">
-                    <p>© 2024 Begley Handyman Service. Built for longevity.</p>
+                    <p>© 2026 Begley Handyman Service. Built for longevity. Oxnard, CA.</p>
                     {/* <div className="flex space-x-8 mt-4 md:mt-0">
                         <a className="hover:text-brand-black" href="#">Privacy</a>
                         <a className="hover:text-brand-black" href="#">Terms</a>

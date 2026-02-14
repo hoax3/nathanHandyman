@@ -17,6 +17,7 @@ const Hero = () => {
                 </h1>
                 <p className="text-xl md:text-2xl text-brand-gray-400 max-w-2xl mx-auto mb-12 font-medium leading-relaxed">
                     High-end home maintenance and specialized repairs executed with technical precision.
+                    <span className="block mt-2 text-lg md:text-xl">Serving Oxnard, CA.</span>
                 </p>
                 <div className="flex justify-center">
                     <button
@@ -27,7 +28,7 @@ const Hero = () => {
                     </button>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 export default Hero;
